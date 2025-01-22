@@ -50,7 +50,7 @@ export class News extends Component {
     this.props.setProgress(100);
   }
   async componentDidMount() {
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=4346050d0b944dbba8064a8496fb295b&page=1&pageSize=${this.props.pageSize}`;
+    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apikey}&page=1&pageSize=${this.props.pageSize}`;
     // this.setState({loading: true});
     // let data = await fetch(url);
     // let parsedData = await data.json()
@@ -66,7 +66,7 @@ export class News extends Component {
 
   handlePreviousClick = async () => {
     // console.log("Previous");
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=4346050d0b944dbba8064a8496fb295b&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
+    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apikey}&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
     // this.setState({loading: true});
     // let data = await fetch(url);
     // let parsedData = await data.json()
@@ -83,7 +83,7 @@ export class News extends Component {
   handleNextClick = async () => {
     // console.log("Next");
     // if(!(this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize))) {
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=4346050d0b944dbba8064a8496fb295b&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
+    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apikey}&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
     // this.setState({loading: true});
     // let data = await fetch(url);
     // let parsedData = await data.json()
